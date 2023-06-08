@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in cosmmos</title>
+    <link rel="stylesheet" href="signin.css">
+     <script src="index.js"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form >
+            <div class="input-group">
+                <div class="input-field" id="namefield">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Password">
+                </div>
+                <p>Forget Password <a href="#"> click here</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupbtn">Sign up</button>
+                <button type="button" id="signinbtn" class="disable">Sign in</button>
+            </div>
+        </form>
+    </div>
+   </div> 
+   <script>
+    let signupbtn =document.getElementById("signupbtn");
+let signinbtn =document.getElementById("signinbtn");
+let namefield =document.getElementById("namefield");
+let title =document.getElementById("title");
+
+
+signinbtn.onclick=function(){
+    namefield.style.maxHeight="0";
+    title.innerHTML="Sign in";
+    signupbtn.classList.add("disable");
+    signinbtn.classList.add("disable");
+}
+signupbtn.onclick=function(){
+    namefield.style.maxHeight="60px";
+    title.innerHTML="Sign up";
+    signupbtn.classList.remove("disable");
+    signinbtn.classList.add("disable");
+}
+
+   </script>
+</body>
+</html>
