@@ -6,33 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <div class="fixheader">
     <header class="text-gray-600 body-font">
+      <div class="navbar">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <svg xml="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
               <path d=LOGO></path>
             </svg>
             <span class="ml-3 text-xl">HMS</span>
           </a>
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900"><a href="team.html"> Team</a></a>
-            <a class="mr-5 hover:text-gray-900">Second Link</a>
-            <a class="mr-5 hover:text-gray-900">Third Link</a>
-            <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-          </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+          <div class="navbar">
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"  style="position: fixed;width: 100%; ">
+          <strong><a class="mr-2 hover:text-gray-900">Book Appointment</a></strong>
+          <strong><a class="mr-5 hover:text-gray-900">Services</a></strong>
+          <strong><a class="mr-5 hover:text-gray-900">Contact us</a></strong>
+          <strong><a class="mr-5 hover:text-gray-900">Career</a></strong>
+            
+          <strong><a class="mr-5 hover:text-gray-900"><a href="team.html"> Team</a></a></strong>
+
+          
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" style="margin-left: 200px;"  onclick="window.location.href='signin.html';">Sign in
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
+              <path d=""></path>
             </svg>
           </button>
+        </nav>
+      </div>
         </div>
+      </div>
+   
       </header>
 
 
-
-      <div class="flex items-center justify-center bg-gray-300 ">
+<div class="statics"></div>
+      <div class="flex items-center justify-center bg-gray-300 " >
         <div class="flex-col items-center justify-center ">
             <div class="flex">
             <div class="flex lg:flex-row flex-col p-4 space-x-4 space-y-4 max-w-7xl justify-around w-full h-auto lg:h-60 items-center ">
